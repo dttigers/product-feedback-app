@@ -1,0 +1,25 @@
+{
+  "workflow": {
+    "mode": "yolo",
+    "confirmations": {
+      "phase_start": false,
+      "plan_approval": false,
+      "destructive_actions": true
+    }
+  },
+  "planning": {
+    "depth": "standard",
+    "phases_range": [5, 8],
+    "plans_per_phase_range": [3, 5]
+  },
+  "parallelization": {
+    "enabled": true,
+    "max_concurrent_agents": 3,
+    "skip_checkpoints": true,
+    "min_plans_for_parallel": 2
+  },
+  "notifications": {
+    "on_phase_complete": false,
+    "on_error": true
+  }
+}
